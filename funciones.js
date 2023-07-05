@@ -30,8 +30,8 @@ function operar()
 }
 function operar2()
 {
-    
-    if(isNaN(num1) || isNaN(num2))
+    var num1 = document.getElementById("n1.1").value;
+    if(isNaN(num1))
     {
         alert("Debe colocar solo numeros");
     }
@@ -52,9 +52,11 @@ function borrar()
     document.getElementById("n1").value = "";
     document.getElementById("n2").value = "";
     document.getElementById("resultado").innerHTML = "";
+}
+function borrar3()
+{
     document.getElementById("n1.1").value = "";
-    document.getElementById("n2").value = "";
-    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("resultado2").innerHTML = "";
 }
 function elegirMayor(){
     var e1 = document.getElementById("e1.3").value;
@@ -94,10 +96,9 @@ function borrar2()
 {
     document.getElementById("n1.3").value = "";
     document.getElementById("n2.3").value = "";
-    document.getElementById("resultado").innerHTML = "";
     document.getElementById("e1.3").value = "";
     document.getElementById("e2.3").value = "";
-    document.getElementById("resultado").innerHTML = "";
+    document.getElementById("mostrar").innerHTML = "";
 }
 
 function enviar() {
