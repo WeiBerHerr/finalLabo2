@@ -28,7 +28,9 @@ el placeholder
 9- las imágenes utilizadas deben ser optimizadas para que sean de rápido acceso dentro de la 
 pagina.
   1 Las imagenes utilizadas en la galeria estan optimizadas 
-  2 
+  2 Igualmente las imagenes en index y calculadora
 10- la creatividad y diseño serán evaluadas.
+  El tema nunca fue sugerido en clase, y el diseño es nuevo para mi y segun lo trabajado anteriormente
 11- el texto de la pagina debe ser acorde al tema elegido. 
+  El texto en las paginas tiene coherencia al tema y seccion que se encuentran
 12-la pagina web debe ser montada en githubpages. Y enviar el link por correo antes de la defensa.
