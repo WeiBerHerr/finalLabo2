@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./funciones.js"></script>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script src="./funciones.js"></script>
+    <h1>SUMA DE DOS NUMEROS</h1>
+    <form>
+        <span>numero 1</span>
+        <input type="text" id="n1" name="n1" placeholder="numero1"><br><br>
+        <span>numero 2</span>
+        <input type="text" id="n2" name="n2" placeholder="numero2" min ="0"><br><br>
+        <select name="operaciones" id="operaciones">
+            <option value="suma">Sumar</option>
+            <option value="resta">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Division</option>
+
+        </select>
+        <button type="button" onclick="sumar()">Operar</button>
+        <button type="button" onclick="borrar()">Borrar</button>
+    
+    </form>
+
+    <div id="resultado"></div>
+    
+    <br><br>
+    
+    <form>
+        <span>Nombre 1</span>
+        <input type="text" id="n1" name="n1" placeholder="Nombre1"><br><br>
+        <span>Edad 1</span>
+        <input type="text" id="e1" name="e1" placeholder="Edad1" min ="0"><br><br>
+        <span>Nombre 2</span>
+        <input type="text" id="n2" name="n2" placeholder="Nombre2"><br><br>
+        <span>Edad 2</span>
+        <input type="text" id="e2" name="e2" placeholder="Edad2" min ="0"><br><br>
+
+    </form>
+    <div id="mostrar"></div>
+    <button type="button" onclick="elegirMayor()">Sortear  Mayor</button>
+    <button type="button" onclick="borrar2()">Borrar</button>
+</body>
+</html>

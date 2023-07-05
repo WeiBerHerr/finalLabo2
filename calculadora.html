@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora Costos</title>
+
+    <script src="./funciones.js"></script>
+    <!--<link rel="stylesheet" href="estilos.css"> -->
+    
+    <link rel="stylesheet" href="styleCalculadora.css">
+
+</head>
+<header>
+    
+    <a id="interaccion-button" onclick="redireccion()" href="index.html" >HOME</a>
+    <a id="interaccion-button" onclick="redireccion()" href="sobreMi.html" >SOBRE MI</a>
+    <a id="interaccion-button" onclick="redireccion()" href="servicios.html" >SERVICIOS</a>
+    <a id="interaccion-button" onclick="redireccion()" href="contacto.html" >CONTACTO</a>
+    <h1>Calculadora de Costos</h1>
+</header>
+<body>
+    <script src="./funciones.js"></script>
+    <h1>Clases de Matematias o Fisica 5 U$D</h1>
+    <form>
+        <span>Horas</span>
+        <input type="text" id="n1.1" name="n1.1" placeholder="NUMERO ENTERO"><br><br>
+        
+        <button type="button" onclick="operar2()">Calcular</button>
+        <button type="button" onclick="borrar()">Borrar</button>
+    
+    </form>
+    
+    <div id="resultado2"></div>
+    
+    <br><br>
+    <h1>Estima las horas disponibles del proyecto</h1>
+    <form>
+        <h4>En esta seccion, indique las horas previstas y como desa calcular las horas disponibles para asesoria.</h4>
+        <img src="img/training_redcalendar1.jpg" alt="">
+        <h4>Esto puede ser sumandolas al total(proyeto nuevo) o restando las ya utilizadas del proyecto</h4>
+        <span>Horas previstas para el Proyecto</span>
+        <input type="text" id="n1" name="n1" placeholder="Horas previstas para el Proyecto"><br><br>
+        <span>Horas</span>
+        <input type="text" id="n2" name="n2" placeholder="Horas" min ="0"><br><br>
+        <select name="operaciones" id="operaciones">
+            <option value="suma">Sumar</option>
+            <option value="resta">Restar</option>
+        </select>
+        <button type="button" onclick="operar()">Operar</button>
+        <button type="button" onclick="borrar()">Borrar</button>
+    
+    </form>
+
+    <div id="resultado"></div>
+    
+    <br><br>
+    
+    
+    <h1>Asesoria Proyectos - Compara precios</h1>
+    <form>
+        <span>Proyecto en curso 50 U$D</span>
+        <input type="text" id="n1.3" name="n1" placeholder="Proyecto"><br><br>
+        <span>Horas</span>
+        <input type="text" id="e1.3" name="e1" placeholder="hs para proyecto en curso" min ="0"><br><br>
+        <span>Proyecto Nuevo 100 U$D</span>
+        <input type="text" id="n2.3" name="n2" placeholder="Proyecto"><br><br>
+        <span>Horas</span>
+        <input type="text" id="e2.3" name="e2" placeholder="hs para proyecto nuevo" min ="0"><br><br>
+
+    </form>
+    <div id="mostrar"></div>
+    <button type="button" onclick="elegirMayor()">Sortear  Mayor</button>
+    <button type="button" onclick="borrar2()">Borrar</button>
+</body>
+
+<footer>
+    <h4>Todos los derechos reservados &copy; Rubén Blanco</h4>
+</footer>
+</html>

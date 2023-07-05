@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styleContacto.css">
+    <script src="funciones.js"></script>
+</head>
+    <header>
+      <a id="interaccion-button" onclick="redireccion()" href="index.html" >HOME</a>    
+      <a id="interaccion-button" onclick="redireccion()" href="sobreMi.html" >SOBRE MI</a>
+      <a id="interaccion-button" onclick="redireccion()" href="servicios.html" >SERVICIOS</a>
+      <a id="interaccion-button" onclick="redireccion()" href="calculadora.html" >CALCULADORA COSTOS</a>
+      <h1>Contacto</h1>
+    </header>
+<body>
+    <div class="container">
+        <h1>FORMULARIO DE CONTACTO</h1>
+    
+        <form id="contacto" action="">
+            <div>
+              <label for="nombre">NOMBRE</label><span class="required">*</span>
+              <Span><input type="text" id="nombre" name="nombre" placeholder="Juan Carlos Martinez" required></Span>
+            </div>
+          
+            <div>
+              <label for="dni">DNI</label><span class="required">*</span>
+              <input type="dni" id="contraseña" name="contraseña" placeholder="Ej: 93.562.248" required>
+            </div>
+            <div>
+              <label for="email">EMAIL</label> <span class="required">*</span>
+              <input type="email" id="email" name="Email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div>
+              <label for="edad">EDAD</label>
+              <input type="edad" id="edad" name="edad" placeholder="Ej: 25, 52 ,67 ..."></input>
+            </div>
+          
+            <div>
+              <label for="pais">PAÍS</label>
+              <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="mexico">México</option>
+              </select>
+            </div>
+          
+          
+          
+            <div>
+              <label>Idiomas</label>
+              <div class="idiomas-checkbox">
+                <input type="checkbox" id="ingles" name="ingles">
+                <label for="ingles">Inglés</label>
+              </div>
+              <div class="idiomas-checkbox">
+                <input type="checkbox" id="español" name="español">
+                <label for="español">Español</label>
+              </div>
+              <div class="idiomas-checkbox">
+                <input type="checkbox" id="italiano" name="italiano">
+                <label for="italiano">Italiano</label>
+              </div>
+            </div>
+          </form>
+          <div class="center">
+            <button type="button" onclick="enviar()">Enviar</button>
+        </div>
+          
+    </div>
+</body>
+<footer>
+  <h4>Todos los derechos reservados &copy; Rubén Blanco</h4>
+</footer>
+</html>
